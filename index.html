@@ -4,7 +4,7 @@
 <link rel="canonical" href="https://rossclaw449.github.io/proofwall/"><meta name="robots" content="index,follow"><meta name="theme-color" content="#5B4FCF">
 <meta property="og:type" content="website"><meta property="og:url" content="https://rossclaw449.github.io/proofwall/"><meta property="og:site_name" content="ProofWall">
 <meta property="og:title" content="ProofWall: Self-Hosted Testimonial Wall, Pay Once"><meta property="og:description" content="Collect, approve, and embed customer testimonials. A one-time $59 alternative to Senja and Testimonial.to.">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="ProofWall: Self-Hosted Testimonial Wall, Pay Once"><meta name="twitter:description" content="Collect, approve, and embed testimonials. Pay once instead of monthly.">
+<meta property="og:image" content="https://rossclaw449.github.io/proofwall/img/og-image.svg"><meta property="og:image:type" content="image/svg+xml"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ProofWall: self-hosted testimonial wall. Pay once: Solo $59, Agency $149."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://rossclaw449.github.io/proofwall/img/og-image.svg"><meta name="twitter:image:alt" content="ProofWall: self-hosted testimonial wall, pay once."><meta name="twitter:title" content="ProofWall: Self-Hosted Testimonial Wall, Pay Once"><meta name="twitter:description" content="Collect, approve, and embed testimonials. Pay once instead of monthly.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script type="application/ld+json">{
 "@context": "https://schema.org",
@@ -55,13 +55,14 @@
 },
 {
 "@type": "FAQPage",
+"@id": "https://rossclaw449.github.io/proofwall/#faq",
 "mainEntity": [
 {
 "@type": "Question",
 "name": "Is ProofWall a Senja alternative?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "Yes. ProofWall collects and displays testimonials like Senja or Testimonial.to, but it is self-hosted and you pay once ($59) instead of monthly."
+"text": "Yes, for text testimonials. ProofWall collects, approves, and displays testimonials like Senja or Testimonial.to, but you host it yourself and pay once ($59 Solo, $149 Agency) instead of monthly. Senja and Testimonial.to do more, for example video, imports from other platforms, and integrations."
 }
 },
 {
@@ -77,34 +78,75 @@
 "name": "Where is my data stored?",
 "acceptedAnswer": {
 "@type": "Answer",
-"text": "On your own server, in a single file. ProofWall does not phone home."
+"text": "On your own server, in a single JSON file. ProofWall does not phone home or add tracking scripts to your site."
+}
+},
+{
+"@type": "Question",
+"name": "What do I need to host it?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Node.js 18 or newer, or Docker, on any small server: a VPS, Render, Railway, or Fly.io. The free repo includes configs for all three, and you should put it behind HTTPS."
+}
+},
+{
+"@type": "Question",
+"name": "What happens after the 1 year of updates?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Your copy keeps working forever. You just stop getting new versions unless you buy again."
+}
+},
+{
+"@type": "Question",
+"name": "What is the difference between Free and paid?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Free is the full app limited to 1 wall and 15 active testimonials, with a Powered by ProofWall badge. Solo ($59, one site) and Agency ($149, unlimited client sites) remove the limit and the badge."
+}
+},
+{
+"@type": "Question",
+"name": "Can I get a refund?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes. Full refund within 14 days of purchase, no questions asked."
+}
+},
+{
+"@type": "Question",
+"name": "Is support included?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Yes, through docs and email. There are no calls."
 }
 }
 ]
 }
 ]
 }</script>
-<style>:root{--indigo:#5B4FCF;--indigo-d:#3F37A8;--teal:#2BA39A;--gold:#F2B632;--ink:#0F1B3D;--bg:#FAFAF7}body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;margin:0;color:var(--ink);background:#fff}h1,h2,h3{color:var(--ink)}h2{border-left:4px solid var(--teal);padding-left:12px}a{color:var(--indigo)}.cta:hover{background:var(--indigo-d)}.card h3{color:var(--indigo)}header{border-bottom:1px solid #ecebf7;background:#fff}section{max-width:960px;margin:auto;padding:56px 20px}h1{font-size:44px;line-height:1.1}.cta{display:inline-block;background:var(--indigo);color:#fff;padding:14px 22px;border-radius:10px;text-decoration:none}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{border:1px solid #e5e5e5;border-radius:12px;padding:20px}table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #eee;padding:10px;text-align:left}.hero{background:linear-gradient(180deg,#F3F1FF 0%,var(--bg) 100%)}header nav{max-width:960px;margin:auto;padding:12px 20px;font-size:14px}a{color:#1a1a1a}.cta{color:#fff}small{color:#444}footer{text-align:center;padding:30px;color:#595959}caption{text-align:left;font-weight:600;padding:8px 0}.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px}a:focus-visible{outline:3px solid #2563eb;outline-offset:2px}</style></head><body>
+<style>:root{--indigo:#5B4FCF;--indigo-d:#3F37A8;--teal:#2BA39A;--gold:#F2B632;--ink:#0F1B3D;--bg:#FAFAF7}body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;margin:0;color:var(--ink);background:#fff}h1,h2,h3{color:var(--ink)}h2{border-left:4px solid var(--teal);padding-left:12px}a{color:var(--indigo)}.cta:hover{background:var(--indigo-d)}.card h3{color:var(--indigo)}header{border-bottom:1px solid #ecebf7;background:#fff}section{max-width:960px;margin:auto;padding:56px 20px}h1{font-size:44px;line-height:1.1}.cta{display:inline-block;background:var(--indigo);color:#fff;padding:14px 22px;border-radius:10px;text-decoration:none}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{border:1px solid #e5e5e5;border-radius:12px;padding:20px}table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #eee;padding:10px;text-align:left}.hero{background:linear-gradient(180deg,#F3F1FF 0%,var(--bg) 100%)}header nav{max-width:960px;margin:auto;padding:12px 20px;font-size:14px}a{color:#1a1a1a}.cta{color:#fff}small{color:#444}footer{text-align:center;padding:30px;color:#595959}caption{text-align:left;font-weight:600;padding:8px 0}.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px}a:focus-visible{outline:3px solid #2563eb;outline-offset:2px}.shots{margin:32px 0 0;display:grid;gap:16px}.shots img{width:100%;height:auto;border-radius:12px;box-shadow:0 10px 30px rgba(15,27,61,.12)}.shots figcaption{font-size:13px;color:#555}details{border-bottom:1px solid #eee;padding:12px 0}summary{font-weight:600;cursor:pointer}</style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header><nav aria-label="Main"><a href="./" aria-label="ProofWall home"><img src="logo.svg" alt="ProofWall logo" width="160" height="35" style="vertical-align:middle"></a> · <a href="#how">How it works</a> · <a href="#compare">Compare</a> · <a href="#pricing">Pricing</a> · <a href="demo.html">Demo</a> · <a href="#faq">FAQ</a> · <a href="#terms">Terms</a></nav></header>
 <main id="main">
 <section class="hero">
 <h1>Self-hosted testimonial wall: collect, approve, and embed testimonials. Pay once.</h1>
 <p>ProofWall is a small, self-hosted app: send customers a link, approve what they write, and paste one line of code to show a Wall of Love on your site. No $29/month subscription.</p>
-<a class="cta" href="#pricing">Get ProofWall for $59</a> <a href="demo.html">See the live demo</a> · <a href="https://github.com/rossclaw449/proofwall-free">Free download</a> <small>Free version: 1 wall, 15 testimonials. Upgrade removes the limit and badge.</small></section>
+<a class="cta" href="#pricing">Get ProofWall for $59</a> <a href="demo.html">See the live demo</a> · <a href="https://github.com/rossclaw449/proofwall-free">Free download</a> <small>Free version: 1 wall, 15 testimonials. Upgrade removes the limit and badge.</small>
+<figure class="shots"><img src="img/screenshot-wall.svg" width="960" height="440" alt="ProofWall Wall of Love widget embedded on a site, showing sample testimonial cards"><img src="img/screenshot-admin.svg" width="960" height="600" alt="ProofWall admin panel with sample testimonials waiting for approval" loading="lazy"><figcaption>Recreated from the real ProofWall Free UI, shown with invented <b>sample</b> testimonials.</figcaption></figure></section>
 <section id="how"><h2>How it works: collect, approve, embed a Wall of Love</h2><div class="grid">
 <div class="card"><h3>1. Share a link</h3>Customers leave a star rating and a few words. Spam filter built in.</div>
 <div class="card"><h3>2. Approve</h3>Nothing goes public until you click Approve.</div>
 <div class="card"><h3>3. Embed</h3>One script tag works on WordPress, Webflow, Framer, Ghost, Squarespace, or plain HTML.</div>
 <div class="card"><h3>You own the data</h3>A JSON file on your own server. No lock-in, no per-seat fees.</div></div></section>
 <section id="compare"><h2>A pay-once Senja and Testimonial.to alternative</h2><table><caption>Testimonial tool cost: one-time payment vs. subscription</caption><thead><tr><th scope="col">Plan</th><th scope="col">Year 1</th><th scope="col">Year 3</th></tr></thead><tbody>
-<tr><td>Senja Starter ($29/mo)</td><td>$348</td><td>$1,044</td></tr><tr><td>Senja Pro ($59/mo)</td><td>$708</td><td>$2,124</td></tr><tr><td>Senja Scale ($179/mo)</td><td>$2,148</td><td>$6,444</td></tr><tr><td>Testimonial.to Ultimate ($50/mo per space)</td><td>$600</td><td>$1,800</td></tr>
-<tr><td><b>ProofWall Solo</b></td><td><b>$59</b></td><td><b>$59</b></td></tr></tbody></table><small>Competitor monthly list prices, checked November 2, 2026 (testimonial.to/pricing, senja.io/pricing). Check their sites for current pricing.</small></section>
+<tr><td>Senja Starter ($29/mo)</td><td>$348</td><td>$1,044</td></tr><tr><td>Senja Pro ($59/mo)</td><td>$708</td><td>$2,124</td></tr><tr><td>Senja Business ($179/mo founding offer)</td><td>$2,148</td><td>$6,444</td></tr><tr><td>Testimonial.to Ultimate ($50/mo per space)</td><td>$600</td><td>$1,800</td></tr>
+<tr><td><b>ProofWall Solo</b></td><td><b>$59</b></td><td><b>$59</b></td></tr></tbody></table><small>Competitor monthly list prices, checked November 4, 2026 (testimonial.to/pricing, senja.io/pricing). Check their sites for current pricing.</small></section>
 <section id="pricing"><h2>Pricing: Free, Solo $59, Agency $149, all one-time</h2><div class="grid">
 <div class="card"><h3>Free</h3><p><b>$0</b></p>1 wall, up to 15 testimonials, "Powered by ProofWall" badge. No license key.<br><br><a class="cta" href="https://github.com/rossclaw449/proofwall-free">Download free</a></div>
 <div class="card"><h3>Solo</h3><p><b>$59 one-time</b></p>One site, badge removed, 1 year of updates.<br><br><a class="cta" href="https://buy.stripe.com/test_8x26oHenMdOC9tBcRMaR200" rel="nofollow noopener">Buy Solo, $59</a></div>
 <div class="card"><h3>Agency</h3><p><b>$149 one-time</b></p>Unlimited client sites, badge removed, 1 year of updates.<br><br><a class="cta" href="https://buy.stripe.com/test_eVq3cv7Zo7qe49h7xsaR201" rel="nofollow noopener">Buy Agency, $149</a></div></div>
 <p><small>Needs Node 18+ on any host (a VPS, Render, Railway, Fly). <a href="refund.html">14-day refund</a>, no questions asked. Your license key is delivered right after checkout.</small></p></section>
-<section id="faq"><h2>Frequently asked questions</h2><p><b>Is ProofWall a Senja alternative?</b> Yes. It collects and displays testimonials the same way, but you host it yourself and pay once instead of monthly.</p><p><b>Where is my data stored?</b> On your own server, in a single file. ProofWall never phones home.</p><p><b>Is there video?</b> Not in v1. Text and star ratings only.</p><p><b>Support?</b> Docs and email only. No calls. <!-- TODO(Ross): add support email --></p></section>
+<section id="faq"><h2>Frequently asked questions</h2><details><summary>Is ProofWall a Senja alternative?</summary><p>Yes, for text testimonials. ProofWall collects, approves, and displays testimonials like Senja or Testimonial.to, but you host it yourself and pay once ($59 Solo, $149 Agency) instead of monthly. Senja and Testimonial.to do more, for example video, imports from other platforms, and integrations.</p></details><details><summary>Does it support video testimonials?</summary><p>Not in v1. It supports text testimonials with star ratings.</p></details><details><summary>Where is my data stored?</summary><p>On your own server, in a single JSON file. ProofWall does not phone home or add tracking scripts to your site.</p></details><details><summary>What do I need to host it?</summary><p>Node.js 18 or newer, or Docker, on any small server: a VPS, Render, Railway, or Fly.io. The free repo includes configs for all three, and you should put it behind HTTPS.</p></details><details><summary>What happens after the 1 year of updates?</summary><p>Your copy keeps working forever. You just stop getting new versions unless you buy again.</p></details><details><summary>What is the difference between Free and paid?</summary><p>Free is the full app limited to 1 wall and 15 active testimonials, with a Powered by ProofWall badge. Solo ($59, one site) and Agency ($149, unlimited client sites) remove the limit and the badge.</p></details><details><summary>Can I get a refund?</summary><p>Yes. Full refund within 14 days of purchase, no questions asked.</p></details><details><summary>Is support included?</summary><p>Yes, through docs and email. There are no calls.</p></details><!-- TODO(Ross): add support email --></section>
 <section id="terms"><h2>Terms, refunds and privacy</h2><p><b>License:</b> one-time purchase grants use on one site (Solo) or unlimited client sites (Agency), with 1 year of updates. The software is provided as-is.</p><p><b>Refunds:</b> full refund within 14 days of purchase, no questions asked. See the <a href="refund.html">refund policy</a>.</p><p><b>Privacy:</b> ProofWall runs on your own server. We never receive your testimonials or your customers' data, and the app does not phone home. Checkout is processed by Stripe. See the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms / EULA</a>.</p></section>
-</main><footer>© 2026 ProofWall (operated by [SELLER NAME]) · <a href="#pricing">Pricing</a> · <a href="demo.html">Demo</a> · <a href="https://github.com/rossclaw449/proofwall-free">Free download</a> · <a href="terms.html">Terms / EULA</a> · <a href="refund.html">Refund policy</a> · <a href="privacy.html">Privacy</a><!-- TODO(Ross): replace [SELLER NAME] --></footer></body></html>
+</main><footer>© 2026 ProofWall (operated by [SELLER NAME]) · <a href="#pricing">Pricing</a> · <a href="demo.html">Demo</a> · <a href="https://github.com/rossclaw449/proofwall-free">Free download</a> · <a href="terms.html">Terms / EULA</a> · <a href="refund.html">Refund policy</a> · <a href="privacy.html">Privacy</a> · Blog: <a href="blog/senja-alternative.html">Senja alternative</a> · <a href="blog/self-hosted-testimonial-wall.html">Self-host a testimonial wall</a> · <a href="blog/testimonial-to-alternative.html">Testimonial.to alternative</a><!-- TODO(Ross): replace [SELLER NAME] --></footer></body></html>
